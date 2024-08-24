@@ -1,4 +1,4 @@
-# Eye Tracking Games for Autistic Children
+# Eye Tracking Game for Autistic Children
 
 ## Objective
 
