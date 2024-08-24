@@ -57,16 +57,4 @@ game consistently.
 
 ![image](https://github.com/user-attachments/assets/cd2957ea-ab46-4ba1-a309-b78e61952576)
 
-## Conclusion and Future Work
-
-Overall, an eye-tracking game for autistic children can be a valuable tool for improving attention and 
-concentration, but it should be part of a comprehensive and individualized treatment plan. However, it's 
-important to consider the specific needs and preferences of the individual child, as not all autistic children have 
-the same sensory and cognitive profiles. It's also important to involve parents, caregivers, and professionals in 
-the design process to ensure that the game is appropriate and effective for the child. Doctors can perform 
-analysis with the help of the graphs and suggest the various steps that is supposed to be taken in the future. 
-Doctors can also monitor whether if the patient is playing the game consistently.
-In the future we aim to develop a greater number of different attractive games that can seek the attention of 
-the child. We further also aim to integrate voice command typing/movement to our games. We also aim to 
-integrate the whole system as a unified app/tool and monetize it to the world.
 
