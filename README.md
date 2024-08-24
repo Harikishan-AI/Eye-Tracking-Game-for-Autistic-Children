@@ -18,16 +18,55 @@ The Coin Collection game, currently under development, involves using eye moveme
 
 Data collected during gameplay, including reaction times and scores, is stored in a MongoDB database. This data is visualized in graphs to track the child's progress over time. Doctors can use these graphs to monitor gameplay consistency and evaluate the effectiveness of the game in improving cognitive abilities, helping determine if further treatment or intervention is needed.
 
-## Architecture
-
-- **Unity**: Provides the front-end interface for the game and user interaction.
-- **Node.js**: Connects Unity with MongoDB, manages user sessions, and integrates with Chart.js for data visualization.
-- **MongoDB**: Stores user data, reaction times, and game scores. Data is visualized using Chart.js.
-
-
+## Architecture Diagram
 
 ![image](https://github.com/user-attachments/assets/01f0e180-20d5-4feb-8ecf-297c7da5a0c2)
 
+## Implementation
+
+### Unity
+
+Unity serves as the front-end for users, handling essential functionalities such as login and registration. It features:
+- **Main Game Menu**: Allows users to choose from available games.
+- **Analytics Page**: Provides access to user analytics after each game is played.
+
+### Node.js
+
+Node.js acts as the intermediary between the front-end (Unity) and the back-end (MongoDB). It is responsible for:
+- **Session Management**: Associates each user login with a session cookie for authorization and tracks user data.
+- **Session Timeout**: Monitors idle time to handle session timeouts.
+- **Analytics Integration**: Utilizes Chart.js for visualizing game data and user performance.
+
+### MongoDB
+
+MongoDB is used as the database for storing and managing game data. It includes:
+- **USERS Schema**: Stores user authentication credentials with encrypted passwords.
+- **Game Schemas**: Includes separate schemas for each game. For example:
+- **STOPWATCH Schema**: Records the reaction time of each user, which is then used to generate performance graphs with Chart.js.
+
 ![image](https://github.com/user-attachments/assets/86816d9e-6bdd-4e5c-b3d0-0571d7b10e78)
 
+## Results and Discussion
+
+Below are the charts of different users (autistic children). As we can infer from the graphs that it records the 
+reaction time of the user with respect to each game trial that they play. From this we can deduce that whether 
+there is any improvement in their performance i.e., whether their reaction time decreases with the increase in 
+the number of game trials. Doctors can perform analysis with the help of these graphs and suggest the various 
+steps that is supposed to be taken in the future. Doctors can also monitor whether if the patient is playing the 
+game consistently.
+
 ![image](https://github.com/user-attachments/assets/cd2957ea-ab46-4ba1-a309-b78e61952576)
+
+## Conclusion and Future Work
+
+Overall, an eye-tracking game for autistic children can be a valuable tool for improving attention and 
+concentration, but it should be part of a comprehensive and individualized treatment plan. However, it's 
+important to consider the specific needs and preferences of the individual child, as not all autistic children have 
+the same sensory and cognitive profiles. It's also important to involve parents, caregivers, and professionals in 
+the design process to ensure that the game is appropriate and effective for the child. Doctors can perform 
+analysis with the help of the graphs and suggest the various steps that is supposed to be taken in the future. 
+Doctors can also monitor whether if the patient is playing the game consistently.
+In the future we aim to develop a greater number of different attractive games that can seek the attention of 
+the child. We further also aim to integrate voice command typing/movement to our games. We also aim to 
+integrate the whole system as a unified app/tool and monetize it to the world.
+
